@@ -16,8 +16,7 @@ Also, the AGEpy package developed at the Bioinformatics Core Facility of the Max
 
 ## Input files
 
-The only required input file needed is a gtf file. The original gtf file was created using RNA-seq data from the first replicate of the "WT_NoDox" and "WT_PlusDox" conditions.
-
+The only required input file needed is a gtf file.
 ## Output location
 
 The output location of the new gtf file will be in the folder that contains this script. The outputted file name will be "genes_w_introns.gtf".
