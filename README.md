@@ -18,6 +18,10 @@ Also, the AGEpy package developed at the Bioinformatics Core Facility of the Max
 
 The only required input file needed is a gtf file. The original gtf file was created using RNA-seq data from the first replicate of the "WT_NoDox" and "WT_PlusDox" conditions.
 
+## Output location
+
+The output location of the new gtf file will be in the folder that contains this script.
+
 ## Working examples
 
 Example command to run the script:
