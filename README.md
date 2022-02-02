@@ -2,7 +2,7 @@
 
 *Michael Ly, Hannah M Burgess, Sahil B. Shah, Ian Mohr, Britt A. Glaunsinger*
 
-# Script overview
+# Function overview
 
 This script extracts intron coordinates based on exon data from gtf files and outputs a new gtf file containing all genomic coordinates including introns. The RNA-seq data to replicate our work in the paper, "Vaccinia virus D10 has broad decapping activity that is regulated by mRNA splicing", published on ... can be found using the GEO accession number: GSE185520. However, this script can be used generally on any gtf file of interest.
 
@@ -17,3 +17,10 @@ Also, the AGEpy package developed at the Bioinformatics Core Facility of the Max
 ## Input files
 
 The only required input file needed is a gtf file. The original gtf file was created using RNA-seq data from the first replicate of the "WT_NoDox" and "WT_PlusDox" conditions.
+
+## Working examples
+
+Example command to run the script:
+```
+python3 gtf_intron_extraction.py gene_coordinates.gtf
+```
