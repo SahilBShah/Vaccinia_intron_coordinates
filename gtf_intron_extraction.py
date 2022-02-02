@@ -13,6 +13,8 @@ def main():
 	gtf_file = parser.add_argument('gtf_file', type=str, help='Input the gtf file containing genetic coordinates from RNA-seq data. Make sure the gtf extension is included.')
 	args = parser.parse_args()
 
+	print("This may take a while!")
+
 	#Read in gtf file and format necessary columns
 	genes_df = read_gtf(args.gtf_file)
 	genes_df_frames = genes_df[genes_df["feature"] != "CDS"]
@@ -44,7 +46,6 @@ def main():
 	gene_stops = genes_df[genes_df["feature"] == "stop_codon"].reset_index().drop(columns=["index"])
 
 	for gene in unique_genes:
-	    print(gene)
 	    one_gene_df = genes_df_cp[genes_df_cp["gene_id"] == gene].sort_values(by="start")
 	    
 	    if len(one_gene_df) > 1:
