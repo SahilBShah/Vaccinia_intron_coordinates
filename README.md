@@ -20,7 +20,7 @@ The only required input file needed is a gtf file. The original gtf file was cre
 
 ## Output location
 
-The output location of the new gtf file will be in the folder that contains this script.
+The output location of the new gtf file will be in the folder that contains this script. The outputted file name will be "genes_w_introns.gtf".
 
 ## Working examples
 
