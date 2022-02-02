@@ -4,7 +4,7 @@
 
 # Function overview
 
-This script extracts intron coordinates based on exon data from gtf files and outputs a new gtf file containing all genomic coordinates including introns. The RNA-seq data to replicate our work in the paper, "Vaccinia virus D10 has broad decapping activity that is regulated by mRNA splicing", published on ... can be found using the GEO accession number: GSE185520. However, this script can be used generally on any gtf file of interest.
+This script extracts intron coordinates based on exon data from gtf files and outputs a new gtf file containing all genomic coordinates including introns. The RNA-seq data to replicate our work in the paper, "Vaccinia virus D10 has broad decapping activity that is regulated by mRNA splicing", can be found using the GEO accession number: GSE185520. However, this script can be used generally on any gtf file of interest.
 
 ## Requirements
 
