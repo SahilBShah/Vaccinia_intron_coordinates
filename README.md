@@ -8,7 +8,11 @@ This script extracts intron coordinates based on exon data from gtf files and ou
 
 ## Requirements
 
-Most packages that this script relies upon are from the standard scientific/numeric python distributions. However, the AGEpy package developed at the Bioinformatics Core Facility of the Max Planck Institute for Biology of Ageing was also used to output python data frames as a gtf file. The instructions to install this package can be found here: <https://github.com/mpg-age-bioinformatics/AGEpy>. 
+Most packages that this script relies upon are from the standard scientific/numeric python distributions. However, the gtfparse must be installed to read in gtf files. This can be done by using the command:
+```
+pip install gtfparse
+```
+Also, the AGEpy package developed at the Bioinformatics Core Facility of the Max Planck Institute for Biology of Ageing was also used to output python data frames as a gtf file. The instructions to install this package can be found here: <https://github.com/mpg-age-bioinformatics/AGEpy>. 
 
 ## Input files
 
