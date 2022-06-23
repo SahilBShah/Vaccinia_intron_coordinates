@@ -29,7 +29,7 @@ def main():
 	genes_df_cp = genes_df_cp[genes_df_cp["feature"] == "exon"]
 
 	#Drop unnecessary columns
-	genes_df_cp = genes_df_cp.drop(columns=["seqname", "source", "score", "frame", "gene_name", "transcript_id", "tss_id", "p_id"])
+	genes_df_cp = genes_df_cp[["feature", "start", "end", "strand", "gene_id"]]
 
 	#Dropping duplicate rows
 	genes_df_cp = genes_df_cp.drop_duplicates()
