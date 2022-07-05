@@ -39,6 +39,7 @@ def main():
 	unique_genes.sort()
 
 	#Begin intron analysis
+	print("Beginning intron analysis.")
 	#Identify introns for every gene
 	#This may take a few minutes
 	df_lst = []
@@ -175,7 +176,9 @@ def main():
 	final_df = pd.concat([genes_df, introns_df])
 
 	#Output final dataframe as a gtf file
-	age.writeGTF(final_df,"./genes_w_introns.gtf")
+	age.writeGTF(final_df,"./{}_w_introns.gtf".format(args.gtf_file.split("/")[-1]))
+
+	print("Success! {}_w_introns.gtf has been created in the directory the script was executed in!".format(args.gtf_file.split("/")[-1]))
 
 if __name__ == '__main__':
     main()
